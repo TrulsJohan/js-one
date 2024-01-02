@@ -110,6 +110,9 @@ console.log(num2);
 let convertedNum2 = num.toString();
 console.log(convertedNum2);
 
+console.log(num2 + convertedNum2);
+console.log(numString + convertedNumString);
+
 
 
 
