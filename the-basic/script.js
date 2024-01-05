@@ -113,6 +113,3 @@ console.log(convertedNum2);
 console.log(num2 + convertedNum2);
 console.log(numString + convertedNumString);
 
-
-
-
