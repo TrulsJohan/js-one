@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.loader {
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+}
+
+.counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.ad {
+    background-color: darkcyan;
+    padding: 2rem;
+    font-size: 3rem;
+    display: none;
+}
+
