@@ -36,7 +36,3 @@ for (let i = 0; i < totalPeople; i++) {
     container.innerHTML = html;
 };
 
-
-
-
-
