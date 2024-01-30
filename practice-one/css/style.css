@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.products {
+    background-color: darkcyan;
+    padding: 2rem;
+    width: fit-content;
+    margin-top: 3rem;
+}
+
+.circle {
+    background-color: darkcyan;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+}
+

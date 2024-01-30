@@ -1,4 +1,4 @@
-import products from "./data/products.js";
+// import products from "./data/products.js";
 console.log("products: ", products);
 
 const productContainer = document.querySelector(".product-container");

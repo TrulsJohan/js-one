@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice One</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <!--  import data.array to innerHTML  -->
+    <div class="container"></div>
+    <script src="js/script.js" type="module"></script>
+
+    <!--  dropdown menu - onchange  -->
+    <label for="circles">How many circles:</label>
+    <select name="circles" id="circles">
+        <option>Select an option...</option>
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+    </select>
+    <div class="circles-container"></div>
+
+    <!--  sign up form - onkeyup  -->
+    <form>
+        <h1>Sign up here!</h1>
+        <label for="first-name">first name:</label>
+        <input type="text" id="first-name">
+        <span id="first-name-error"></span>
+
+        <label for="password">password:</label>
+        <input type="password" id="password">
+        <span id="password-error"></span>
+
+        <div>
+            <button type="submit" id="signup-btn" disabled>Sign Up</button>
+        </div>
+    </form>
+</body>
+
+</html>
+
