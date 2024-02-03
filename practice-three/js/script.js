@@ -1,43 +1,20 @@
-function doSomething(someParam) {
-    console.log("do something");
-    console.log("do something");
-    console.log("do something");
+const container = document.querySelector("#catsContainer");
+console.log(container);
 
-    someParam();
+let html = "";
+let dataResult = "";
+fetch(`https://catfact.ninja/facts`)
+    .then(response => response.json())
+    .then(result => {
+        dataResult = result;
+        console.log("dataResult: ", dataResult);
+        for (let i = 0; i < dataResult.length; i++){
+            html += `<div class="catsDisplay">
+                        <h1 class="catsTitle">title: ${dataResult[i].title}</h1>
+                        <h2 class="catsLength">length: ${dataResult[i].length}</h2>
+                     </div>
+            `
+            container.innerHTML = html;
+        }
+    });
 
-    console.log("do something");
-    console.log("do something");
-    console.log("do something");
-}
-
-doSomething  (function (){
-    console.log("hello world");
-});
-
-
-
-
-
-
-// function doSomethingWithData(someData) {
-//     console.log("do something" + someData)
-// }
-//
-// //Void with some data
-// doSomethingWithData("Some sweet string")
-//
-//
-// function doSomethingThatReturns() {
-//     return "This is easy"
-// }
-//
-// let result = doSomethingThatReturns() + doSomethingThatReturns()
-// console.log(result);
-//
-//
-// function doSomethingThatReturnsSomething() {
-//     return "This is easy";
-// }
-//
-// let result2 = doSomethingThatReturnsSomething("alright");
-// console.log(result2);
